@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-praticando-manipulação-DOM</title>
+</head>
+<body>
+    <h1>Agenda de contatos</h1>
+    <button onclick="criarContato()">Criar novo contato</button>
+    <button onclick="apagarContato()">Apagar contato</button>
+
+    <section id="lista-de-contato"></section>
+    <script>
+        function criarContato() {
+            console.log('Função acionada');
+
+            const contactsession = document.getElementById('lista-de-contato');
+
+            const h3 = document.createElement('h3');
+            h3.innerHTML = "Contato";
+            contactsession.appendChild(h3);
+            
+            const ul = document.createElement('ul');
+            
+            const nameli = document.createElement('li');
+            nameli.innerHTML = 'Nome: '
+            const nameinput = document.createElement('input');
+            nameinput.type = 'text';
+            nameinput.name = 'full name';
+            nameli.appendChild(nameinput);
+            ul.appendChild(nameli);
+            
+            contactsession.appendChild(ul);
+            }
+    </script>
+</body>
+</html>
