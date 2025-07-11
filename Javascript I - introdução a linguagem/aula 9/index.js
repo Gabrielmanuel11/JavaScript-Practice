@@ -1,3 +1,3 @@
-let name = "gabriel"
+let user = "gabriel"
 
-console.log(name + " " + "está página está funcionando")
+console.log(user + " " + "está página está funcionando")
